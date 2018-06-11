@@ -56,13 +56,13 @@ Before you follow the instructions in this document, you'll need to make sure yo
 
 ## Explore the code
 
-Let's take a look at some of the key parts of the sample. We'll also point out where you can add your own code to change the sample.
+Next, take a look at some of the key parts of the sample. You can also add your own code to change the sample.
 
 ### Authentication
 
 The sample uses [OmniAuth](https://github.com/omniauth/omniauth) with the [omniauth-microsoft_v2_auth](https://github.com/cbales/omniauth-microsoft_graph) gem to handle the [Azure AD authorization code flow](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols-oauth-code) for getting an access token.
 
-- The requested scopes (or permissions) are defined in the **./config/environment.rb** file. If you want to modify the sample to use the Microsoft Graph for something other than sending mail, you can add the [applicable permissions](/concepts/permissions_reference.md) there.
+- The requested scopes (or permissions) are defined in the **./config/environment.rb** file. If you want to modify the sample to use Microsoft Graph for something other than sending mail, you can add the [applicable permissions](/concepts/permissions_reference.md) there.
 
     ```ruby
     ENV['OAUTH_SCOPE'] =
